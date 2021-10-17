@@ -1,0 +1,146 @@
+:root {
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --highlight-color: #fa0707;
+  --coral-color: #ff7f50;
+  --light-color: #f4ece6;
+  --blue-color: #38bff8;
+  --grey-color: #434c58;
+  --light-color: #f4ece6;
+  --lightcoral-color: #ffdfdf;
+  --lightskyblue-color: #c9ecfb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.section-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--lightskyblue-color);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.section-title {
+  display: none;
+}
+
+.slider-container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.slider-container > input[type='radio'] {
+  display: none;
+}
+
+.slider {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  max-width: 900px;
+  padding: 42px 0 78px;
+  border-radius: 30px;
+}
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+  gap: 2%;
+}
+
+.slider-title {
+  align-self: flex-start;
+  margin-bottom: -7%;
+  padding: 0 1%;
+  color: var(--black-color);
+  font-size: 2em;
+}
+
+.slide-img {
+  border-radius: 20px;
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  gap: 0 6px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: -7%;
+  z-index: 2;
+  padding-bottom: 20%;
+}
+
+.controls label:last-child {
+  margin-right: 1%;
+}
+
+.controls label {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border: solid 3px var(--black-color);
+  border-radius: 100vw;
+  line-height: 1;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.controls label:hover {
+  background-color: var(--white-color);
+}
+
+.slider-parent {
+  position: relative;
+}
+
+.slide {
+  transition: transform 0.6s;
+}
+
+#dot2:checked ~ .slider-parent .slide {
+  transform: translateX(-100%);
+}
+
+#dot3:checked ~ .slider-parent .slide {
+  transform: translateX(-200%);
+}
+
+#dot4:checked ~ .slider-parent .slide {
+  transform: translateX(-300%);
+}
+
+#dot1:checked ~ .controls [for='dot1'],
+#dot2:checked ~ .controls [for='dot2'],
+#dot3:checked ~ .controls [for='dot3'],
+#dot4:checked ~ .controls [for='dot4'] {
+  background: var(--blue-color);
+}
