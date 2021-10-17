@@ -7,7 +7,7 @@
   --blue-color: #38bff8;
   --grey-color: #434c58;
   --light-color: #f4ece6;
-  --lightcoral-color: #ffdfdf;
+  --lightcoral-color: #edb9b9;
   --lightskyblue-color: #c9ecfb;
 }
 
@@ -25,7 +25,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--lightskyblue-color);
+  background-image: url('./assets/img/programming.jpg');
+  background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
   height: 100vh;
@@ -85,7 +86,7 @@ html {
 }
 
 .slide-img {
-  border: 10px solid var(--white-color);
+  border: 10px solid var(--black-color);
   border-radius: 20px;
 }
 
@@ -111,6 +112,7 @@ html {
   justify-content: center;
   width: 25px;
   height: 25px;
+  background: var(--lightcoral-color);
   border: solid 3px var(--black-color);
   border-radius: 100vw;
   line-height: 1;
@@ -146,5 +148,5 @@ html {
 #dot2:checked ~ .controls [for='dot2'],
 #dot3:checked ~ .controls [for='dot3'],
 #dot4:checked ~ .controls [for='dot4'] {
-  background: var(--blue-color);
+  background: none;
 }
