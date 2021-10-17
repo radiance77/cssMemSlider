@@ -76,12 +76,16 @@ html {
 .slider-title {
   align-self: flex-start;
   margin-bottom: -7%;
+  margin-top: 3%;
+  width: 80%;
   padding: 0 1%;
+  width: 70%;
   color: var(--black-color);
-  font-size: 2em;
+  font-size: 1.2rem;
 }
 
 .slide-img {
+  border: 10px solid var(--white-color);
   border-radius: 20px;
 }
 
@@ -118,7 +122,7 @@ html {
   background-color: var(--white-color);
 }
 
-.slider-parent {
+.slides {
   position: relative;
 }
 
@@ -126,15 +130,15 @@ html {
   transition: transform 0.6s;
 }
 
-#dot2:checked ~ .slider-parent .slide {
+#dot2:checked ~ .slides .slide {
   transform: translateX(-100%);
 }
 
-#dot3:checked ~ .slider-parent .slide {
+#dot3:checked ~ .slides .slide {
   transform: translateX(-200%);
 }
 
-#dot4:checked ~ .slider-parent .slide {
+#dot4:checked ~ .slides .slide {
   transform: translateX(-300%);
 }
 
