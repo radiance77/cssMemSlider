@@ -9,6 +9,7 @@
   --light-color: #f4ece6;
   --lightcoral-color: #edb9b9;
   --lightskyblue-color: #c9ecfb;
+  --lightgreen-color: #09a539;
 }
 
 * {
@@ -60,9 +61,9 @@ html {
   overflow-x: hidden;
   overflow-y: auto;
   scroll-behavior: smooth;
-  max-width: 900px;
-  padding: 42px 0 78px;
-  border-radius: 30px;
+  max-width: 47vw;
+  padding: 17% 0 12%;
+  border-radius: 10%;
 }
 
 .slide {
@@ -86,19 +87,21 @@ html {
 }
 
 .slide-img {
-  border: 10px solid var(--black-color);
-  border-radius: 20px;
+  border: 0.5rem solid var(--black-color);
+  border-radius: 5%;
+  width: 70%;
+  height: 100%;
 }
 
 .controls {
   width: 100%;
   display: flex;
-  gap: 0 6px;
+  gap: 2.5%;
   align-items: center;
   justify-content: flex-end;
-  margin-top: -7%;
+  margin-top: -12%;
   z-index: 2;
-  padding-bottom: 20%;
+  padding-bottom: 30%;
 }
 
 .controls label:last-child {
@@ -110,10 +113,10 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 25px;
-  height: 25px;
-  background: var(--lightcoral-color);
-  border: solid 3px var(--black-color);
+  width: 1.4rem;
+  height: 1.4rem;
+  background: var(--lightgreen-color);
+  border: solid 0.2rem var(--black-color);
   border-radius: 100vw;
   line-height: 1;
   font-size: 1rem;
@@ -130,6 +133,10 @@ html {
 
 .slide {
   transition: transform 0.6s;
+}
+
+.dot-link {
+  padding: 100%;
 }
 
 #dot2:checked ~ .slides .slide {
@@ -149,4 +156,82 @@ html {
 #dot3:checked ~ .controls [for='dot3'],
 #dot4:checked ~ .controls [for='dot4'] {
   background: none;
+}
+
+@media (max-width: 1330px) {
+  .slider {
+    max-width: 84vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .controls {
+    margin-top: -20%;
+    justify-content: center;
+  }
+
+  .controls label {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+
+  .slider-title {
+    font-size: 0.9rem;
+    margin-top: 12%;
+    align-self: center;
+    margin-bottom: -9%;
+  }
+}
+
+@media (max-width: 513px) {
+  .controls {
+    margin-top: -24%;
+  }
+  .controls label {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .slider-title {
+    font-size: 0.8rem;
+    margin-top: 12%;
+    align-self: center;
+    margin-bottom: -9%;
+  }
+}
+
+@media (max-width: 453px) {
+  .controls {
+    margin-top: -27%;
+  }
+  .controls label {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .slider-title {
+    font-size: 0.7rem;
+    margin-top: 12%;
+    align-self: center;
+    margin-bottom: -9%;
+  }
+}
+
+@media (max-width: 393px) {
+  .controls label {
+    width: 0.7rem;
+    height: 0.7rem;
+  }
+
+  .controls {
+    margin-top: -33%;
+    justify-content: center;
+  }
+
+  .slider-title {
+    font-size: 0.7rem;
+    margin-top: 10%;
+    align-self: center;
+    margin-bottom: -9%;
+  }
 }
