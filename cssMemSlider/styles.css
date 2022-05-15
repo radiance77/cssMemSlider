@@ -372,19 +372,23 @@ body {
 
 @media (max-width: 1500px) {
   .slider {
-    width: 55vw;
+    width: 45vw;
   }
 }
 
 @media (max-width: 910px) {
   .slider__desc {
+    grid-row: 4/5;
+    grid-column: 1/5;
+  }
+
+  .slider__controls {
     grid-row: 3/4;
     grid-column: 1/5;
   }
 
   .slider__controls {
-    grid-row: 4/5;
-    grid-column: 1/5;
+    margin-top: 1em;
   }
 
   .slider {
