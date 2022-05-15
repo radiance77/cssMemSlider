@@ -11,79 +11,79 @@
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="header__title">CssMemSlider</h1>
-    </header>
+    <div class="wrapper">
 
-    <main class="main">
-        <section class="section__slider">
-            <div class="slider">
-                <input type="radio" name="radio-btn" id="radio-btn1" class="slider__radio-btn" checked>
-                <input type="radio" name="radio-btn" id="radio-btn2" class="slider__radio-btn">
-                <input type="radio" name="radio-btn" id="radio-btn3" class="slider__radio-btn">
-                <input type="radio" name="radio-btn" id="radio-btn4" class="slider__radio-btn">
-                <input type="radio" name="radio-btn" id="radio-btn5" class="slider__radio-btn">
+        <main class="main">
+            <section class="section__slider">
+                <div class="slider">
+                    <input type="radio" name="radio-btn" id="radio-btn1" class="slider__radio-btn" checked>
+                    <input type="radio" name="radio-btn" id="radio-btn2" class="slider__radio-btn">
+                    <input type="radio" name="radio-btn" id="radio-btn3" class="slider__radio-btn">
+                    <input type="radio" name="radio-btn" id="radio-btn4" class="slider__radio-btn">
+                    <input type="radio" name="radio-btn" id="radio-btn5" class="slider__radio-btn">
 
-                <div class="slider__slides">
-                    <div class="slide">
-                        <img src="./assets/img/mem.jpg" alt="picture" class="slide-img">
+                    <div class="slider__slides">
+                        <div class="slide">
+                            <img src="./assets/img/mem.jpg" alt="picture" class="slide-img">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/mem1.jpg" alt="picture" class="slide-img">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/mem2.jpg" alt="picture" class="slide-img">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/mem3.jpg" alt="picture" class="slide-img">
+                        </div>
+                        <div class="slide">
+                            <img src="./assets/img/mem4.jpg" alt="picture" class="slide-img">
+                        </div>
                     </div>
-                    <div class="slide">
-                        <img src="./assets/img/mem1.jpg" alt="picture" class="slide-img">
+
+                    <div class="slider__desc">
+                        <div class="slide__description">
+                            <p class="slide__text">Проблема С++ в том, что необходимо узнать всё о нём перед тем,
+                                как начать писать на нём все что угодно.</p>
+                        </div>
+                        <div class="slide__description">
+                            <p class="slide__text">Магия перестаёт существовать после того, как вы понимаете, как
+                                она работает</p>
+                        </div>
+                        <div class="slide__description">
+                            <p class="slide__text">Лень — естественное состояние программиста, после которого он
+                                рождает хороший алгоритм</p>
+                        </div>
+                        <div class="slide__description">
+                            <p class="slide__text">В наибольшей безопасности тот, кто начеку, даже когда нет
+                                опасности.</p>
+                        </div>
+                        <div class="slide__description">
+                            <p class="slide__text"> Многие из вас знакомы с достоинствами программиста. Их всего три, и
+                                разумеется это: лень, нетерпеливость и гордыня.</p>
+                        </div>
                     </div>
-                    <div class="slide">
-                        <img src="./assets/img/mem2.jpg" alt="picture" class="slide-img">
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/img/mem3.jpg" alt="picture" class="slide-img">
-                    </div>
-                    <div class="slide">
-                        <img src="./assets/img/mem4.jpg" alt="picture" class="slide-img">
+
+                    <div class="slider__controls">
+                        <label for="radio-btn1" class="controls__btn">
+                            <span class="controls__btn-dot"></span>
+                        </label>
+                        <label for="radio-btn2" class="controls__btn">
+                            <span class="controls__btn-dot"></span>
+                        </label>
+                        <label for="radio-btn3" class="controls__btn">
+                            <span class="controls__btn-dot"></span>
+                        </label>
+                        <label for="radio-btn4" class="controls__btn">
+                            <span class="controls__btn-dot"></span>
+                        </label>
+                        <label for="radio-btn5" class="controls__btn">
+                            <span class="controls__btn-dot"></span>
+                        </label>
                     </div>
                 </div>
-
-                <div class="slider__desc">
-                    <div class="slide__description">
-                        <p class="slide__text">Проблема С++ в том, что необходимо узнать всё о нём перед тем,
-                            как начать писать на нём все что угодно.</p>
-                    </div>
-                    <div class="slide__description">
-                        <p class="slide__text">Магия перестаёт существовать после того, как вы понимаете, как
-                            она работает</p>
-                    </div>
-                    <div class="slide__description">
-                        <p class="slide__text">Лень — естественное состояние программиста, после которого он
-                            рождает хороший алгоритм</p>
-                    </div>
-                    <div class="slide__description">
-                        <p class="slide__text">В наибольшей безопасности тот, кто начеку, даже когда нет
-                            опасности.</p>
-                    </div>
-                    <div class="slide__description">
-                        <p class="slide__text"> Многие из вас знакомы с достоинствами программиста. Их всего три, и разумеется это: лень, нетерпеливость и гордыня.</p>
-                    </div>
-                </div>
-
-                <div class="slider__controls">
-                    <label for="radio-btn1" class="controls__btn">
-                        <span class="controls__btn-dot"></span>
-                    </label>
-                    <label for="radio-btn2" class="controls__btn">
-                        <span class="controls__btn-dot"></span>
-                    </label>
-                    <label for="radio-btn3" class="controls__btn">
-                        <span class="controls__btn-dot"></span>
-                    </label>
-                    <label for="radio-btn4" class="controls__btn">
-                        <span class="controls__btn-dot"></span>
-                    </label>
-                    <label for="radio-btn5" class="controls__btn">
-                        <span class="controls__btn-dot"></span>
-                    </label>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
