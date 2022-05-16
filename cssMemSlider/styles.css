@@ -299,6 +299,7 @@ body {
 .controls__btn {
   cursor: pointer;
   padding: 0.5em;
+  -webkit-tap-highlight-color: transparent
 }
 
 .controls__btn-dot {
