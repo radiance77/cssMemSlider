@@ -299,7 +299,7 @@ body {
 .controls__btn {
   cursor: pointer;
   padding: 0.5em;
-  -webkit-tap-highlight-color: transparent
+  -webkit-tap-highlight-color: transparent;
 }
 
 .controls__btn-dot {
@@ -349,6 +349,29 @@ body {
   [for='radio-btn5']
   .controls__btn-dot:hover {
   border: 0.3em solid #ffe2c4;
+}
+
+#radio-btn1:checked
+  ~ .slider__controls
+  [for='radio-btn1']
+  .controls__btn-dot:active,
+#radio-btn2:checked
+  ~ .slider__controls
+  [for='radio-btn2']
+  .controls__btn-dot:active,
+#radio-btn3:checked
+  ~ .slider__controls
+  [for='radio-btn3']
+  .controls__btn-dot:active,
+#radio-btn4:checked
+  ~ .slider__controls
+  [for='radio-btn4']
+  .controls__btn-dot:active,
+#radio-btn5:checked
+  ~ .slider__controls
+  [for='radio-btn5']
+  .controls__btn-dot:active {
+  background-color: #3b557d;
 }
 
 #radio-btn1:checked ~ .slider__slides .slide {
